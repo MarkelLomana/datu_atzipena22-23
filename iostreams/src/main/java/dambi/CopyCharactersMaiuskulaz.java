@@ -4,6 +4,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/** Programa honek proiektuaren erroan dagoen Xanadu fitxategia character bakoitza irakurtzen du, 
+    * outagain.txt fitxategian idatziz.
+    * Idaztean karaktereak maiuskulaz idazten dira.
+    */
+
 public class CopyCharactersMaiuskulaz {
     public static void main(String[] args) throws IOException {
 

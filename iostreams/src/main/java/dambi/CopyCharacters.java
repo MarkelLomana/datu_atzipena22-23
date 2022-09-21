@@ -4,6 +4,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/** Programa honek proiektuaren erroan dagoen Xanadu fitxategia character bakoitza irakurtzen du, 
+    * outagain.txt fitxategian idatziz.
+    */
+
 public class CopyCharacters {
     public static void main(String[] args) throws IOException {
 
