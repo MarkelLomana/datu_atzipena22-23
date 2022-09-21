@@ -1,6 +1,8 @@
-dambi\App.class
 dambi\CopyCharactersOrdezkatu.class
 dambi\CopyBytesFNEKontrolatuz.class
 dambi\CopyCharactersMaiuskulaz.class
+dambi\CopyLinesZenbakiekin.class
+dambi\CopyLines.class
 dambi\CopyBytes.class
 dambi\CopyCharacters.class
+dambi\ScanXan.class
