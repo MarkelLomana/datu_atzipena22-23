@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8133cce5-9348-4d9c-9e7c-0b8146ceae60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../iostreams/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyBytes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyBytes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyBytesFNEKontrolatuz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyBytesFNEKontrolatuz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharactersMaiuskulaz.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharactersMaiuskulaz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharactersOrdezkatu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyCharactersOrdezkatu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyLines.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyLines.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyLinesZenbakiekin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/CopyLinesZenbakiekin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../iostreams/target/classes/dambi/ScanXan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../iostreams/target/classes/dambi/ScanXan.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2F7F1QwrvSSx30nJwG5NJhP0VMm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8133cce5-9348-4d9c-9e7c-0b8146ceae60" name="Changes" comment="" />
+      <created>1663835001576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663835001576</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
