@@ -1,9 +1,11 @@
 package dambi;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.io.File;  // Import the File class
 import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.ArrayList; // import the ArrayList class
+
 
 
 public class MainMenu {
@@ -63,16 +65,19 @@ public class MainMenu {
     }
 
     public static void mendiAltuena() {
-        cvsIrakurri(); //main-ean egin beharreko metodoa
+        cvsIrakurri();
         try {
             int altueraHandiena = 0;
+            int posizioa;
 
             for (int i = 0; i < mendiak.size(); i++) {
                 if (mendiak.get(i).getAltuera() > altueraHandiena) {
                     altueraHandiena = mendiak.get(i).getAltuera();
+                    posizioa = i;
                 }
             }
             System.out.println("Mendirik Altuena: " + altueraHandiena);
+            System.out.println();
         } catch (Exception e) {
             System.out.println("An error occurred calculating highest mountain.");
         }
@@ -95,29 +100,33 @@ public class MainMenu {
                 case 2:
             }
 
-        }catch(){
-
+        }catch(Exception ex){
+            System.out.println("sdf");
         }
 
     }
 
 
     public static void cvsIrakurri() {
-
-        //  parseInt() / valueOf() not working
-
         try {
             File myObj = new File("Mendiak.csv");
             Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                String[] cols = data.split(";");
-                String izena = cols[0];
-                String alt = cols[1];
+            int iteration = 0;
+            while (myReader.hasNextLine()  ) {
+                while(iteration == 0) {
+                    iteration++;
+                    String dataHeader = myReader.nextLine();
+                    break;
+                }
+                    String data = myReader.nextLine();
+                    String[] cols = data.split(";");
+                    String izena = cols[0];
+                    String altuera = cols[1];
 
-                String probintzia = cols[2];
+                    String probintzia = cols[2];
 
-                mendiak.add(new Mendia(izena, Integer.parseInt(alt), probintzia));
+                    mendiak.add(new Mendia(izena, Integer.parseInt(altuera), probintzia));
+
             }
             myReader.close();
         } catch (FileNotFoundException e) {
