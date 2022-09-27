@@ -1,11 +1,10 @@
 package dambi;
 
-import java.util.Arrays;
+import java.io.*;
 import java.util.Scanner;
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
 import java.util.ArrayList; // import the ArrayList class
 
+import java.io.FileWriter;
 
 
 public class MainMenu {
@@ -14,7 +13,7 @@ public class MainMenu {
 
     public static void main(String[] args) throws Exception {
 
-        //cvsIrakurri();
+        cvsIrakurri();
 
         Scanner in = new Scanner(System.in);
         int aukera = 0;
@@ -53,7 +52,6 @@ public class MainMenu {
     }
 
     public static void mendienZerrenda() {
-        cvsIrakurri(); //main-ean egin beharreko metodoa
         try {
             for (int i = 0; i < mendiak.size(); i++) {
                 System.out.println(i + ": " + mendiak.get(i).toString());
@@ -65,10 +63,9 @@ public class MainMenu {
     }
 
     public static void mendiAltuena() {
-        cvsIrakurri();
         try {
             int altueraHandiena = 0;
-            int posizioa;
+            int posizioa = 0;
 
             for (int i = 0; i < mendiak.size(); i++) {
                 if (mendiak.get(i).getAltuera() > altueraHandiena) {
@@ -76,8 +73,8 @@ public class MainMenu {
                     posizioa = i;
                 }
             }
-            System.out.println("Mendirik Altuena: " + altueraHandiena);
-            System.out.println();
+            System.out.println("Mendirik Altuena: " + mendiak.get(posizioa).toString());
+
         } catch (Exception e) {
             System.out.println("An error occurred calculating highest mountain.");
         }
@@ -87,27 +84,62 @@ public class MainMenu {
     public static void mendiakCSV() {
         Scanner sc = new Scanner(System.in);
         try {
-            System.out.println("Zein lurraldetako mendiak esportatu nahi dituzu (1,2,3) ? ");
+            System.out.println("MENDIEN ESPORTAZIO MENUA");
+            System.out.println("====================================");
+            System.out.println("Zein lurraldetako mendiak esportatu nahi dituzu (1,2,3,4) ? ");
             System.out.println("1 - Araba");
             System.out.println("2 - Bizkaia");
             System.out.println("3 - Gipuzkoa");
+            System.out.println("4 - Nafarroa");
+            System.out.print("Aukeratu zenbaki bat: ");
             int aukera = sc.nextInt();
 
             switch (aukera) {
                 case 1:
-                    System.out.println();
+                    createCSV("MendiakAraba.csv", "Araba");
                     break;
                 case 2:
+                    createCSV("MendiakBizkaia.csv", "Bizkaia");
+                    break;
+                case 3:
+                    createCSV("MendiakGipuzkoa.csv", "Gipuzkoa");
+                    break;
+                case 4:
+                    createCSV("MendiakNafarroa.csv", "Nafarroa");
+                    break;
+                default:
+                    System.out.println("Ez duzu balore egokia sartu");
             }
-
-        }catch(Exception ex){
-            System.out.println("sdf");
+        } catch (Exception e) {
+            System.out.println("exception :" + e.getMessage());
         }
+    }
+
+    public static void createCSV(String fileName, String probintzia){
+            FileWriter writer = null;
+
+            try {
+                writer = new FileWriter(fileName);
+                writer.append("Izena, Altuera , Probintzia \n");
+                writer.append("--------------------------- \n");
+                int e = 1; //zenbatgarren mendia den agertzeko csv-an
+
+                for (int i = 0; i < mendiak.size(); i++) {
+                    if (mendiak.get(i).getProbintzia().equals(probintzia)) {
+                        writer.append( e + "- " +  mendiak.get(i).getIzena() + ", " + mendiak.get(i).getAltuera() + ", " + mendiak.get(i).getProbintzia() + "\n");
+                        e++;
+                    }
+                }
+                System.out.println("CSV file is created: " + fileName);
+                writer.close();
+            } catch (Exception e) {
+                System.out.println("exception :" + e.getMessage());
+            }
 
     }
 
-
     public static void cvsIrakurri() {
+
         try {
             File myObj = new File("Mendiak.csv");
             Scanner myReader = new Scanner(myObj);
