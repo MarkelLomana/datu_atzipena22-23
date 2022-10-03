@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea">
-      <change afterPath="$PROJECT_DIR$/country.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/country_adapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/adapter/DateAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/DateAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/business/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Countries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/business/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Country.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleSimple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDErrorHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDValidation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xsd/MyErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/MyErrorHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xsd/MyValidationEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/MyValidationEventHandler.class" afterDir="false" />
-    </list>
+    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +137,13 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1664791987971</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="JAXB Proiektua basea">
+      <created>1664792847329</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1664792847329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
