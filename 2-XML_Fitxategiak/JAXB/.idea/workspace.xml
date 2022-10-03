@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/DateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/business/Countries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/business/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/unmarshal/UnMarshalJAXVBCompleteExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xsd/JaxBExampleXSD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xsd/JaxBExampleXSDErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xsd/JaxBExampleXSDValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xsd/MyErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/xsd/MyValidationEventHandler.java" afterDir="false" />
+    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea">
+      <change afterPath="$PROJECT_DIR$/country.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/country_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adapter/DateAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/DateAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Countries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleSimple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDErrorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/JaxBExampleXSDValidation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/MyErrorHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/MyErrorHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xsd/MyValidationEventHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xsd/MyValidationEventHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +34,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FcSMBzAXmlFGWjXyLYV8auXI8y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/lomana.markel/Documents/GITHUB/datu_atzipena22-23/2-XML_Fitxategiak/JAXB",
@@ -56,6 +57,82 @@
       <recent name="C:\Users\lomana.markel\Documents\GITHUB\datu_atzipena22-23\2-XML_Fitxategiak\JAXB\src\main\java" />
     </key>
   </component>
+  <component name="RunManager" selected="Application.JaxBExampleList">
+    <configuration name="JaxBExampleAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adapter.JaxBExampleAdapter" />
+      <module name="JAXB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JaxBExampleList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="marshal.JaxBExampleList" />
+      <module name="JAXB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="marshal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JaxBExampleSimple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="marshal.JaxBExampleSimple" />
+      <module name="JAXB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="marshal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JaxBExampleXSDErrorHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xsd.JaxBExampleXSDErrorHandler" />
+      <module name="JAXB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xsd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnMarshalJAXVBCompleteExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="unmarshal.UnMarshalJAXVBCompleteExample" />
+      <module name="JAXB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unmarshal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JaxBExampleList" />
+        <item itemvalue="Application.JaxBExampleXSDErrorHandler" />
+        <item itemvalue="Application.UnMarshalJAXVBCompleteExample" />
+        <item itemvalue="Application.JaxBExampleAdapter" />
+        <item itemvalue="Application.JaxBExampleSimple" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,6 +142,19 @@
       <option name="presentableId" value="Default" />
       <updated>1664789830646</updated>
     </task>
+    <task id="LOCAL−00001" summary="JAXB Proiektua basea">
+      <created>1664791957825</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1664791957825</updated>
+    </task>
+    <task id="LOCAL−00002" summary="JAXB Proiektua basea">
+      <created>1664791987971</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1664791987971</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,5 +167,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JAXB Proiektua basea" />
+    <option name="LAST_COMMIT_MESSAGE" value="JAXB Proiektua basea" />
   </component>
 </project>

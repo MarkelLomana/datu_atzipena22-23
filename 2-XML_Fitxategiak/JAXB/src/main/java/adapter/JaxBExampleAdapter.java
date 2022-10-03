@@ -33,6 +33,14 @@ public class JaxBExampleAdapter
 
             country.setFoundation( LocalDate.of( 1469, 10, 19 ) );
 
+            Country country2 = new Country();
+            country2.setName( "Euskal Herria" );
+            country2.setCapital( "Eibar" );
+            country2.setContinent( "Europe" );
+
+
+            country2.setFoundation( LocalDate.of( 1312, 05, 01 ) );
+
             /* init jaxb marshaler */
             JAXBContext jaxbContext = JAXBContext.newInstance( Country.class );
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
@@ -41,8 +49,9 @@ public class JaxBExampleAdapter
             jaxbMarshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true );
 
             /* marshaling of java objects in xml (output to file and standard output) */
-            jaxbMarshaller.marshal( country, new File( "country_adapter.xml" ) );
-            jaxbMarshaller.marshal( country, System.out );
+            jaxbMarshaller.marshal( country2, new File( "country_adapter.xml" ) );
+
+            jaxbMarshaller.marshal( country2, System.out );
 
         }
         catch( JAXBException e )
