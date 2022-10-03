@@ -24,8 +24,10 @@ public class Ariketa2 {
             if (name != null && matcher.matches(name)) {
                 numMatches++;
                 System.out.println(file);
+                file.getFileName();
             }
         }
+
 
         // Prints the total number of
         // matches to standard out.
@@ -54,6 +56,14 @@ public class Ariketa2 {
             System.err.println(exc);
             return CONTINUE;
         }
+    }
+    private static String finded(Path file){
+        PathMatcher matcher = null;
+        Path name = file.getFileName();
+        if (name != null && matcher.matches(name)) {
+            return name.toString();
+        }
+        return null;
     }
 
     static void usage() {
@@ -91,7 +101,8 @@ public class Ariketa2 {
             //Create FIle
             Path file = Path.of(fitxategia);
             try {
-                //Files.walk(foldername);
+                String aol = finded(foldername);
+                Files.walk(Path.of(aol));
                 Files.createFile(file);
                 Files.writeString(file, edukia);
             } catch (FileAlreadyExistsException x) {
@@ -102,4 +113,5 @@ public class Ariketa2 {
             }
         }
     }
+
 }
