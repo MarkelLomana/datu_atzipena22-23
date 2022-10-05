@@ -49,7 +49,7 @@ public class JaxBExampleAdapter
             jaxbMarshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true );
 
             /* marshaling of java objects in xml (output to file and standard output) */
-            jaxbMarshaller.marshal( country2, new File( "country_adapter.xml" ) );
+            jaxbMarshaller.marshal( country, new File( "country_adapter.xml" ) );
 
             jaxbMarshaller.marshal( country2, System.out );
 

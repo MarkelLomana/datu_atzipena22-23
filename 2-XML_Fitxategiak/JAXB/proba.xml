@@ -14,4 +14,11 @@
         <Country_Continent>America</Country_Continent>
         <Country_Population>0</Country_Population>
     </Country>
+    <Country importance="10">
+        <Country_Name>EH</Country_Name>
+        <Country_Capital>Eibar</Country_Capital>
+        <Country_Foundation_Date>1312-10-19</Country_Foundation_Date>
+        <Country_Continent>Europe</Country_Continent>
+        <Country_Population>10000000</Country_Population>
+    </Country>
 </Countries>

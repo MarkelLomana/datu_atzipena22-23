@@ -24,6 +24,7 @@ public class JaxBExampleList
 
             /* init a list with a couple of countries to marshal */
             Country spain = new Country();
+            spain.setImportance(1);
             spain.setName( "Spain" );
             spain.setCapital( "Madrid" );
             spain.setContinent( "Europe" );
@@ -31,6 +32,7 @@ public class JaxBExampleList
             spain.setFoundation( LocalDate.of( 1469, 10, 19 ) );
 
             Country usa = new Country();
+            usa.setImportance(0);
             usa.setName( "USA" );
             usa.setCapital( "Washington" );
             usa.setContinent( "America" );

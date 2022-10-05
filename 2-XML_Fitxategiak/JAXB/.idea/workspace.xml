@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea" />
+    <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea">
+      <change afterPath="$PROJECT_DIR$/proba.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country.xml" beforeDir="false" afterPath="$PROJECT_DIR$/country.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/country_adapter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list_countries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/list_countries.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/business/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Countries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/business/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/unmarshal/UnMarshalJAXVBCompleteExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unmarshal/UnMarshalJAXVBCompleteExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Countries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/business/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,23 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/lomana.markel/Documents/GITHUB/datu_atzipena22-23/2-XML_Fitxategiak/JAXB",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lomana.markel/Documents/GITHUB/datu_atzipena22-23/2-XML_Fitxategiak/JAXB&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lomana.markel\Documents\GITHUB\datu_atzipena22-23\2-XML_Fitxategiak\JAXB\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JaxBExampleList">
+  <component name="RunManager" selected="Application.UnMarshalJAXVBCompleteExample">
     <configuration name="JaxBExampleAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="adapter.JaxBExampleAdapter" />
       <module name="JAXB" />
@@ -108,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JaxBExampleList" />
-        <item itemvalue="Application.JaxBExampleXSDErrorHandler" />
         <item itemvalue="Application.UnMarshalJAXVBCompleteExample" />
+        <item itemvalue="Application.JaxBExampleList" />
         <item itemvalue="Application.JaxBExampleAdapter" />
         <item itemvalue="Application.JaxBExampleSimple" />
+        <item itemvalue="Application.JaxBExampleXSDErrorHandler" />
       </list>
     </recent_temporary>
   </component>

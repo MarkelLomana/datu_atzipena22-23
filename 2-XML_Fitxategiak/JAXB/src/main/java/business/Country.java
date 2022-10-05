@@ -3,6 +3,7 @@ package business;
 import java.time.LocalDate;
 
 import adapter.DateAdapter;
+import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
@@ -28,7 +29,7 @@ public class Country {
 
     String continent;
 
-    int population;
+    int population, importance;
 
     public int getPopulation() {
         return population;
@@ -50,8 +51,10 @@ public class Country {
 
     @Override
     public String toString() {
-        StringBuffer str = new StringBuffer("Name: " + getName() + "\n");
+        StringBuffer str = new StringBuffer("Importance: " + getImportance() + "\n" +
+                "Name: " + getName() + "\n");
         str.append("Capital: " + getCapital() + "\n");
+
 
         if (getFoundation() != null) {
             str.append(getFoundation().toString());
@@ -62,6 +65,10 @@ public class Country {
             str.append(getContinent().toString());
             str.append("\n");
         }
+
+
+
+
 
         return str.toString();
     }
@@ -74,6 +81,14 @@ public class Country {
     public void setCapital(String capital) {
         this.capital = capital;
     }
+
+    @XmlAttribute( name = "importance", required = true )
+    public void setImportance( int importance )
+    {
+        this.importance = importance;
+    }
+
+    public int getImportance() {return importance;}
 
     public LocalDate getFoundation() {
         return foundation;
