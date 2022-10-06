@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia>
+        <izena>Urko</izena>
+        <altuera>786</altuera>
+        <probintzia>Gipuzkoa</probintzia>
+    </Mendia>
+    <Mendia>
+        <izena>Aratz</izena>
+        <altuera>1055</altuera>
+        <probintzia>Araba</probintzia>
+    </Mendia>
+    <Mendia>
+        <izena>Artxanda</izena>
+        <altuera>1025</altuera>
+        <probintzia>Bizkaia</probintzia>
+    </Mendia>
+</Mendiak>

@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d3bfc0-4bbb-4c81-a473-ceaacb732051" name="Changes" comment="JAXB Proiektua basea">
-      <change afterPath="$PROJECT_DIR$/proba.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mendienXMLak/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mendienXMLak/mendienxmlak/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mendienXMLak/mendienxmlak/src/main/java/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mendienXMLak/mendienxmlak/src/main/java/Mendia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mendienXMLak/mendienxmlak/src/main/java/Mendiak.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/country.xml" beforeDir="false" afterPath="$PROJECT_DIR$/country.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/country_adapter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/country_adapter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_countries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/list_countries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/adapter/JaxBExampleAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/business/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Countries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/business/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/business/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/marshal/JaxBExampleList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/unmarshal/UnMarshalJAXVBCompleteExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/unmarshal/UnMarshalJAXVBCompleteExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/adapter/JaxBExampleAdapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/business/Countries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Countries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/business/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/business/Country.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/marshal/JaxBExampleList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/unmarshal/UnMarshalJAXVBCompleteExample.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
