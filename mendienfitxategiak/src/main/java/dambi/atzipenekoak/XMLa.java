@@ -1,9 +1,7 @@
 package dambi.atzipenekoak;
-
 import java.io.File;
-import java.util.ArrayList;
 
-import dambi.pojoak.*;
+import dambi.pojoak.Mendiak;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
@@ -24,7 +22,6 @@ public class XMLa {
         Mendiak mendiIrakurriak = null;
         try
         {
-            /* UNMARSHALL */
             File file = new File( "data/" + strFileIn );
             JAXBContext jaxbContext = JAXBContext.newInstance( Mendiak.class );
 
@@ -40,13 +37,16 @@ public class XMLa {
     }
 
     public int idatzi(Mendiak mendiak) {
-        //int mendiKopurua = mendiak.getMendiak().size();
-        JAXBContext jaxbContext = JAXBContext.newInstance( Mendiak.class );
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-        jaxbMarshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true );
-
-        jaxbMarshaller.marshal( mendiak, new File( "data/" + strFileOut ) );
-    
+        int mendiKopurua = 0;
+        try{
+            JAXBContext jaxbContext = JAXBContext.newInstance( Mendiak.class );
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+            jaxbMarshaller.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true );
+            jaxbMarshaller.marshal( mendiak, new File( "data/" + strFileOut ) );
+            mendiKopurua = mendiak.getMendiak().size();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return mendiKopurua;
     }
 }
