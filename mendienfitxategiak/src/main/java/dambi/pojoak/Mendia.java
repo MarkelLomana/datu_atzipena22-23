@@ -7,26 +7,28 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "Mendia")
 public class Mendia {
 
-    private int id;
+    //private int id;
     private String izena;
     private double altuera;
     private String probintzia;
 
     public Mendia(){
     }
-    public Mendia(int id, String izena, int altuera, String probintzia){
-        this.id = id;
+    public Mendia( String izena, int altuera, String probintzia){
+        //this.id = id;
         this.izena = izena;
         this.altuera = altuera;
         this.probintzia = probintzia;
     }
 
+    /*
     public int getId() {
         return id;
     }
     public void setId(int id) {
         this.id = id;
     }
+    */
     public String getIzena() {
         return izena;
     }
@@ -48,6 +50,6 @@ public class Mendia {
 
     @Override
     public String toString() {
-        return "id= "+ id +";izena= " + izena + ";altuera= " + altuera + ";probintzia= " + probintzia + '\n';
+        return "Izena= " + izena + "; Altuera= " + altuera + "; Probintzia= " + probintzia + '\n';
     }
 }

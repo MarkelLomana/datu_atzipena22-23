@@ -22,7 +22,7 @@ public class XMLa {
         Mendiak mendiIrakurriak = null;
         try
         {
-            File file = new File( "data/" + strFileIn );
+            File file = new File(strFileIn);
             JAXBContext jaxbContext = JAXBContext.newInstance( Mendiak.class );
 
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
@@ -33,6 +33,7 @@ public class XMLa {
         {
             e.printStackTrace();
         }
+        System.out.println(mendiIrakurriak);
         return mendiIrakurriak;
     }
 

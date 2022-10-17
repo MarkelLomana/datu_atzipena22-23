@@ -5,7 +5,10 @@ import dambi.atzipenekoak.*;
 
 public class Irakurketa {
     public static void main(String[] args) throws Exception {
-        Csva csva = new Csva("/data/Mendiak.csv");
+        Csva csva = new Csva("src\\data\\Mendiak.csv");
+        XMLa xmla = new XMLa("src\\data\\Mendiak.xml");
+        Jsona jsona = new Jsona("src\\data\\Mendiak.json");
+        
         Scanner in = new Scanner(System.in);
         int aukera = 0;
         do {
@@ -26,10 +29,10 @@ public class Irakurketa {
                     csva.irakurri();
                     break;
                 case 2:
-                    cvsIrakurri();
+                    xmla.irakurri();
                     break;
                 case 3:
-                    cvsIrakurri();
+                    jsona.irakurri();
                     break;
                 case 10:
                     System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
@@ -39,5 +42,6 @@ public class Irakurketa {
             }
         }
         while (aukera != 10);
+        in.close();
     }
 }

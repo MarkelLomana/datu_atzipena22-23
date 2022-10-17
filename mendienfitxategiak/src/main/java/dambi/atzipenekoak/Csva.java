@@ -28,15 +28,21 @@ public class Csva {
         try {
             br = new BufferedReader(new FileReader(strFileIn));
             String line = br.readLine();
+            int iterator = 0;
             while (line != null) {
+
                 String[] zatiak = line.split(";");
-                if(!zatiak[0].equals("MENDIA")){
-                    Mendia mendi = new Mendia( Integer.parseInt(zatiak[0]), zatiak[1], Integer.parseInt(zatiak[2]), zatiak[3]);
+                if(iterator != 0){
+                    Mendia mendi = new Mendia( zatiak[0], Integer.parseInt(zatiak[1]), zatiak[2]);
                     mendiak.add(mendi);
                     line = br.readLine();
+                }else{
+                    line = br.readLine();                
+                    iterator++;
                 }
             }
             br.close();
+            System.out.println(mendiak);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
