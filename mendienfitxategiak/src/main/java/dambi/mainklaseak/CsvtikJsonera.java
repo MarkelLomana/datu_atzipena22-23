@@ -5,7 +5,7 @@ import java.util.Scanner;
 import dambi.atzipenekoak.*;
 import dambi.pojoak.Mendiak;
 
-public class CsvtikXmlra {
+public class CsvtikJsonera {
   public static void main(String[] args) throws Exception {
     Csva csva = new Csva("src\\data\\Mendiak.csv");
     XMLa xmla = new XMLa("src\\data\\Mendiak.xml");
