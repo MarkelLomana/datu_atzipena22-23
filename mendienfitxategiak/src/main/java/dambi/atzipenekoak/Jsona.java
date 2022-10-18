@@ -29,7 +29,7 @@ public class Jsona {
     /* READ JSON FILE */
     Mendiak mendiak = null;
     try {
-      JsonReader reader = Json.createReader(new FileReader(strFileIn));
+      JsonReader reader = Json.createReader(new FileReader("src\\data\\" + strFileIn));
       JsonStructure jsonst = reader.read(); // json structure estruktura sortzen da
 
       JsonArray jsonstArray = jsonst.asJsonArray(); // json structure arrayra bihurtzen da
@@ -64,11 +64,12 @@ public class Jsona {
       mendiKopurua++;
     }
     model = jab.build();
-    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("../data/" + strFileOut))) {
+    try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("src\\data\\" + strFileOut))) {
       jsonWriter.writeArray(model);
     } catch (Exception e) {
       e.printStackTrace();
     }
+    System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     return mendiKopurua;
   }
 }

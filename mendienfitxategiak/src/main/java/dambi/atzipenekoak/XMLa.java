@@ -23,7 +23,7 @@ public class XMLa {
   public Mendiak irakurri() {
     Mendiak mendiIrakurriak = null;
     try {
-      File file = new File(strFileIn);
+      File file = new File("src\\data\\" + strFileIn);
       JAXBContext jaxbContext = JAXBContext.newInstance(Mendiak.class);
 
       Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
@@ -32,8 +32,23 @@ public class XMLa {
     } catch (Exception e) {
       e.printStackTrace();
     }
-    System.out.println(mendiIrakurriak);
+    System.out.println("Ondo irakurri da XMLa.");
     return mendiIrakurriak;
+  }
+
+  public Mendiak irakurri(Mendiak mendiak) {
+    try {
+      File file = new File("src\\data\\" + strFileIn);
+      JAXBContext jaxbContext = JAXBContext.newInstance(Mendiak.class);
+
+      Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+      mendiak = (Mendiak) jaxbUnmarshaller.unmarshal(file);
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    System.out.println(mendiak);
+    return mendiak;
   }
 
   public int idatzi(Mendiak mendiak) {
@@ -42,11 +57,12 @@ public class XMLa {
       JAXBContext jaxbContext = JAXBContext.newInstance(Mendiak.class);
       Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
       jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-      jaxbMarshaller.marshal(mendiak, new File("data/" + strFileOut));
+      jaxbMarshaller.marshal(mendiak, new File("src\\data\\" + strFileOut));
       mendiKopurua = mendiak.getMendiak().size();
     } catch (Exception e) {
       e.printStackTrace();
     }
+    System.out.println(strFileOut + " fitxategia ondo idatzi da.");
     return mendiKopurua;
   }
 }

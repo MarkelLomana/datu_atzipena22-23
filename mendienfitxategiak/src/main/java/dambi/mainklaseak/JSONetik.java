@@ -5,10 +5,11 @@ import java.util.Scanner;
 import dambi.atzipenekoak.*;
 import dambi.pojoak.Mendiak;
 
-public class CsvtikXmlra {
+public class JSONetik {
   public static void main(String[] args) throws Exception {
-    Csva csva = new Csva("src\\data\\Mendiak.csv");
-    XMLa xmla = new XMLa("src\\data\\Mendiak.xml");
+    Csva csva = new Csva("Mendiak.csv");
+    XMLa xmla = new XMLa("Mendiak.csv", "MendiakOut.xml");
+    Jsona json = new Jsona("Mendiak.csv", "MendiakOut.json");
     Mendiak mendiak = new Mendiak();
 
     Scanner in = new Scanner(System.in);
@@ -18,8 +19,7 @@ public class CsvtikXmlra {
       System.out.println("IRAKURKETA MENUA");
       System.out.println("====================================");
       System.out.println("1.- CSV-tik XML-ra");
-      System.out.println("2.- XML fitxategi bat irakurri");
-      System.out.println("3.- JSON fitxategi bat irakurri");
+      System.out.println("2.- CSV-tik JSON-era");
       System.out.println("10.- Irten");
       System.out.println("");
       System.out.print("Aukeratu zenbaki bat: ");
@@ -28,8 +28,12 @@ public class CsvtikXmlra {
 
       switch (aukera) {
         case 1:
-          csva.irakurri();
+          csva.irakurri(mendiak);
           xmla.idatzi(mendiak);
+          break;
+        case 2:
+          csva.irakurri(mendiak);
+          json.idatzi(mendiak);
           break;
         case 10:
           System.out.println("Eskerrik asko programa hau erabiltzeagatik.");
