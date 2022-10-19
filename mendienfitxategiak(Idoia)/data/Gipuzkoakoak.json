@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "mendia": "Aketegi",
+        "altuera": 1548,
+        "probintzia": "Gipuzkoa"
+    },
+    {
+        "id": 5,
+        "mendia": "Arrate",
+        "altuera": 556,
+        "probintzia": "Gipuzkoa"
+    },
+    {
+        "id": 6,
+        "mendia": "Hernio",
+        "altuera": 1075,
+        "probintzia": "Gipuzkoa"
+    },
+    {
+        "id": 10,
+        "mendia": "Karakate",
+        "altuera": 749,
+        "probintzia": "Gipuzkoa"
+    },
+    {
+        "id": 11,
+        "mendia": "Kurtzebarri",
+        "altuera": 1133,
+        "probintzia": "Gipuzkoa"
+    }
+]

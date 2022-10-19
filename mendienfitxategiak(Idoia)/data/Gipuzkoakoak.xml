@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia id="0">
+        <Mendia>Aketegi</Mendia>
+        <Altuera>1548</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="5">
+        <Mendia>Arrate</Mendia>
+        <Altuera>556</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="6">
+        <Mendia>Hernio</Mendia>
+        <Altuera>1075</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="10">
+        <Mendia>Karakate</Mendia>
+        <Altuera>749</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="11">
+        <Mendia>Kurtzebarri</Mendia>
+        <Altuera>1133</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+</Mendiak>

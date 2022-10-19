@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="eu">
+
+<head>
+  <title>Fitxategien atzipena</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="generator" content="Geany 1.36" />
+  <style>
+    body {
+      background-color: #EEEEEE;
+      font-family: Calibri, Garamond, Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      /* color: maroon;
+    margin-left: 40px;*/
+    }
+
+    pre {
+      background-color: #DDDDDD;
+      border: solid grey 1px;
+      padding: 20px;
+      font-family: monospace;
+      font-size: 1.5em;
+      color: blue;
+    }
+
+    code {
+      font-size: 1.5em;
+    }
+
+    td {
+      padding: 5px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+<h1>Fitxategien Atzipena => mendienfitxategiak</h1>
+ Proiektu honetan mendien inguruko informazioa irakurri eta idatziko dugu csv, xml eta json fitxategietatik. 
+ Horretarako, oinarrizko atzipenerako klase batzuk izango ditugu eta programetatik- main metodoa daukaten klaseetatik- klase horien metodoei deituko diegu.
+ Hau izango da proiektuaren klase diagrama:<br/>
+ <img src="KlaseDiagrama.svg" width="1000px">
+  <!--
+  <h1>JSON fitxategien atzipena</h1>
+  <p>Java erabiliz JSON fitxategiak irakurri eta idazteko API asko daude. </p>
+  <p>Guk "Java API for JSON Processing" deritzona erabiliko dugu, hau da, JSR 353an definitutako eta JSR 374ean
+    beranduago.</p>
+  <p>Eta berau ulertzeko <a href="https://docs.oracle.com/javaee/7/tutorial/jsonp001.htm">Oracleren Java Enterprise
+      Edition tutoriala</a> erabiliko dugu.
+    (Lasai. Ez dugu tutorial osoa landuko.)</p>
+  <ul>
+    <li>Irakurri 19.1 puntua JSON fitxategien ezaugarriak ulertzeko. Orri horretan aipatzen diren parserretatik guk
+      Object Model eredua erabiliko dugu.</li>
+    <li>19.2 puntuan, javax.json paketeko klase eta interfaze nagusiak zerrendatzen dira.</li>
+    <li>Hau da klase nagusien diagrama (borobil urdinaren barruko klaseak dira gureak):<br />
+      <img src="javax_json_api.svg" width="1000px"></img>
+    </li>
+    <li> Maven proiektu berri bat sortuko dugu => group: dambi, artifact: jsonfiles<br />
+      - pom.xml gehitu beharreko dependentziak <a href="https://mvnrepository.com">Maven errepositorian</a> aurkituko
+      ditugu.<br />
+    </li>
+    <pre>
+ &nbsp;&lt;!--&nbsp;https://mvnrepository.com/artifact/javax.json/javax.json-api&nbsp;--&gt;
+&lt;dependency&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;javax.json&lt;/groupId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;javax.json-api&lt;/artifactId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;version&gt;1.1.4&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!--&nbsp;https://mvnrepository.com/artifact/org.glassfish/javax.json&nbsp;--&gt;
+&lt;dependency&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;org.glassfish&lt;/groupId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;javax.json&lt;/artifactId&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;version&gt;1.1.4&lt;/version&gt;
+&lt;/dependency&gt;
+  </pre>
+    <li>Dokumentazioa ere bertatik deskargatu dezakezu</li>
+
+    <li>19.3 orria irakurri eta :
+      <ul>
+        <li>Json fitxategi bat irakurri eta memorian kargatu (= memorian modeloa sortu) (19.3.1 ) => JsonFitxategiaIrakurri.java</li>
+        <li>Modelo bat sortu programatikoki (19.3.2 ) => JsonZuhaitzaSortu.java</li>
+        <li>Saiatu hurrengo modeloa sortzen:  => JsonZuhaitzaSortuBi.java<br />
+          <pre>{"menu": {
+            "id": "file",
+            "value": "File",
+            "popup": {
+              "menuitem": [
+                {"value": "New", "onclick": "CreateNewDoc()"},
+                {"value": "Open", "onclick": "OpenDoc()"},
+                {"value": "Close", "onclick": "CloseDoc()"}
+              ]
+            }
+          }}</pre>
+        </li>
+        <li>19.3.3 puntua, modeloa nabigatzearena EZ irakurri, momentuz. Errekurtsibitatea erabiltzen da nabigaziorako.
+        </li>
+
+        <li>Modelo bat json fitxategi baten gordetzeko JsonWriter bat erabili dezakezu => JsonFitxategiBatenIdatzi.java
+          <pre>
+   ...
+   try (JsonWriter jsonWriter = Json.createWriter(new FileOutputStream("data/Irteera.json"))) {
+      jsonWriter.writeObject(model);
+   }
+   ...
+ </pre>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+	<p>Streamen inguruko Oracleren Java tutoriala 
+    (<a href="https://docs.oracle.com/javase/tutorial/essential/io/streams.html">https://docs.oracle.com/javase/tutorial/essential/io/streams.html</a>) irakurri 
+    eta dakartzan adibideak 1-Fitxategiak karpetan sortuko duzun proiektu berri baten gorde:
+</p>
+<pre>
+    groupId: dambi
+    artifactId: iostreams
+    version: 1.0-SNAPSHOT (lehenetsitakoa, ENTER)
+    package: dambi (lehenetsitakoa, ENTER)
+</pre>
+    Horrelako itxura hartu behar du proiektuaren karpetak:
+<pre>
+1-Fitxategiak
+    └─ iostreams
+         ├─ pom.xml
+         └─ src
+         │   ├─ main
+         │   │   └─ java
+         │   │       └─ dambi
+         │   │            └─ CopyBytes.java
+         │   │            └─ CopyBytesFNEKontrolatuz.java (zuk programatu beharrekoa)
+         │   │            └─ CopyCharacters.java
+         │   │               CopyCharactersOrdezkatuz (zuk)
+                             CopyCharactersMaiuskulaz (zuk)
+                             CopyLines
+                             CopyLinesZenbakiekin (zuk)
+                             ScanXan
+
+                                .
+         │                      .  
+         └─ xanadu.txt
+        </pre>
+Tutoriala jarraitzen joan, azalpenak ondo irakurriz, eta programak exekutatuz eta ulertuz.<br/>
+
+-->
+</body>
+
+</html>

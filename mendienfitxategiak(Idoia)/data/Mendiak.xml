@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mendiak>
+    <Mendia id="0">
+        <Mendia>Aketegi</Mendia>
+        <Altuera>1548</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="1">
+        <Mendia>Albertia</Mendia>
+        <Altuera>868</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="2">
+        <Mendia>Alluitz</Mendia>
+        <Altuera>1034</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia id="3">
+        <Mendia>Anboto</Mendia>
+        <Altuera>1331</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia id="4">
+        <Mendia>Aratz</Mendia>
+        <Altuera>1443</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="5">
+        <Mendia>Arrate</Mendia>
+        <Altuera>556</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="6">
+        <Mendia>Hernio</Mendia>
+        <Altuera>1075</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="7">
+        <Mendia>Ipizte</Mendia>
+        <Altuera>1062</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="8">
+        <Mendia>Jarindo</Mendia>
+        <Altuera>896</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="9">
+        <Mendia>Kapildui</Mendia>
+        <Altuera>1177</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="10">
+        <Mendia>Karakate</Mendia>
+        <Altuera>749</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="11">
+        <Mendia>Kurtzebarri</Mendia>
+        <Altuera>1133</Altuera>
+        <Probintzia>Gipuzkoa</Probintzia>
+    </Mendia>
+    <Mendia id="12">
+        <Mendia>Lapazarra</Mendia>
+        <Altuera>1785</Altuera>
+        <Probintzia>Nafarroa</Probintzia>
+    </Mendia>
+    <Mendia id="13">
+        <Mendia>Mirutegi</Mendia>
+        <Altuera>1166</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="14">
+        <Mendia>Mugarra</Mendia>
+        <Altuera>964</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia id="15">
+        <Mendia>Oiz</Mendia>
+        <Altuera>1029</Altuera>
+        <Probintzia>Bizkaia</Probintzia>
+    </Mendia>
+    <Mendia id="16">
+        <Mendia>Soila</Mendia>
+        <Altuera>993</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="17">
+        <Mendia>ToloÃ±o</Mendia>
+        <Altuera>1263</Altuera>
+        <Probintzia>Araba</Probintzia>
+    </Mendia>
+    <Mendia id="18">
+        <Mendia>Txamantxoia</Mendia>
+        <Altuera>1945</Altuera>
+        <Probintzia>Nafarroa</Probintzia>
+    </Mendia>
+</Mendiak>
