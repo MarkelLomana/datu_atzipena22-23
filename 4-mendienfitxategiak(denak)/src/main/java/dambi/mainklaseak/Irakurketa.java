@@ -5,9 +5,9 @@ import dambi.atzipenekoak.*;
 
 public class Irakurketa {
     public static void main(String[] args) throws Exception {
-        Csva csva = new Csva("src\\data\\Mendiak.csv");
-        XMLa xmla = new XMLa("src\\data\\Mendiak.xml");
-        Jsona jsona = new Jsona("src\\data\\Mendiak.json");
+        Csva csva = new Csva("Mendiak.csv");
+        XMLa xmla = new XMLa("Mendiak.xml");
+        Jsona jsona = new Jsona("Mendiak.json");
         
         Scanner in = new Scanner(System.in);
         int aukera = 0;

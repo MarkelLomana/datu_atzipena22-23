@@ -7,10 +7,13 @@ import dambi.pojoak.Mendiak;
 
 public class JSONetik {
   public static void main(String[] args) throws Exception {
-    Jsona json = new Jsona("Mendiak.json");
-    XMLa xmla = new XMLa("Mendiak.json", "Mendiak_XMLOut2.xml");
-    Csva csva = new Csva("Mendiak.json", "Mendiak_CSVOut.csv");
-    Mendiak mendiak = json.irakurri();
+    String inFile = "Mendiak.json";
+    Jsona json = new Jsona(inFile, "Mendiak_JsonOut.json");
+    XMLa xmla = new XMLa(inFile, "Mendiak_JSONOut.xml");
+    Csva csva = new Csva(inFile, "Mendiak_JSONOut.csv");
+    
+    Mendiak mendiak = new Mendiak();
+    mendiak = json.irakurri();
 
     Scanner in = new Scanner(System.in);
     int aukera = 0;
@@ -18,8 +21,9 @@ public class JSONetik {
       System.out.println();
       System.out.println("IRAKURKETA MENUA");
       System.out.println("====================================");
-      System.out.println("1.- CSV-tik XML-ra");
-      System.out.println("2.- CSV-tik JSON-era");
+      System.out.println("1.- JSON-tik CSV-ra");
+      System.out.println("2.- JSON-tik XML-ra");
+      System.out.println("3.- JSON-tik JSON-era");
       System.out.println("10.- Irten");
       System.out.println("");
       System.out.print("Aukeratu zenbaki bat: ");
@@ -28,11 +32,12 @@ public class JSONetik {
 
       switch (aukera) {
         case 1:
-          csva.irakurri(mendiak);
-          xmla.idatzi(mendiak);
+          csva.idatzi(mendiak);
           break;
         case 2:
-          csva.irakurri(mendiak);
+          xmla.idatzi(mendiak);
+          break;
+        case 3:
           json.idatzi(mendiak);
           break;
         case 10:

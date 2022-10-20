@@ -32,23 +32,9 @@ public class XMLa {
     } catch (Exception e) {
       e.printStackTrace();
     }
+    System.out.println(mendiIrakurriak);
     System.out.println("Ondo irakurri da XMLa.");
     return mendiIrakurriak;
-  }
-
-  public Mendiak irakurri(Mendiak mendiak) {
-    try {
-      File file = new File("src\\data\\" + strFileIn);
-      JAXBContext jaxbContext = JAXBContext.newInstance(Mendiak.class);
-
-      Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-      mendiak = (Mendiak) jaxbUnmarshaller.unmarshal(file);
-
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
-    System.out.println(mendiak);
-    return mendiak;
   }
 
   public int idatzi(Mendiak mendiak) {

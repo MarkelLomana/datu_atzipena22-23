@@ -36,13 +36,12 @@ public class Jsona {
       mendiak = new Mendiak();
       for (int i = 0; i < jsonstArray.size(); i++) {
         Mendia mendia = new Mendia();
-        // mendia.setId(jsonstArray.getJsonObject(i).getInt("id"));
+        mendia.setId(jsonstArray.getJsonObject(i).getInt("id"));
         mendia.setIzena(jsonstArray.getJsonObject(i).getString("mendia"));
         mendia.setAltuera(jsonstArray.getJsonObject(i).getInt("altuera"));
         mendia.setProbintzia(jsonstArray.getJsonObject(i).getString("probintzia"));
         mendiak.add(mendia);
       }
-      System.out.println(mendiak);
     } catch (Exception e) {
       e.printStackTrace();
     }
@@ -56,7 +55,7 @@ public class Jsona {
 
     for (Mendia mendia : mendiak.getMendiak()) {
       jab.add(Json.createObjectBuilder()
-          // .add("id", mendia.getId())
+          .add("id", mendia.getId())
           .add("izena", mendia.getIzena())
           .add("altuera", mendia.getAltuera())
           .add("probintzia", mendia.getProbintzia())

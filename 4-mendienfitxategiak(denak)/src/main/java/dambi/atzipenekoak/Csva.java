@@ -55,53 +55,20 @@ public class Csva {
     return mendiak;
   }
 
-  public Mendiak irakurri(Mendiak mendiak) {
-
-    BufferedReader br = null;
-    try {
-      br = new BufferedReader(new FileReader("src\\data\\" + strFileIn));
-      String line = br.readLine();
-      int iterator = 0;
-      while (line != null) {
-
-        String[] zatiak = line.split(";");
-        if (iterator != 0) {
-          Mendia mendi = new Mendia(zatiak[0], Integer.parseInt(zatiak[1]), zatiak[2]);
-          mendiak.add(mendi);
-          line = br.readLine();
-        } else {
-          line = br.readLine();
-          iterator++;
-        }
-      }
-      br.close();
-      System.out.println("Ondo irakurri da CSV-a");
-    } catch (Exception e) {
-      e.printStackTrace();
-    } finally {
-      try {
-        br.close();
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
-    }
-    return mendiak;
-  }
-
   public int idatzi(Mendiak mendiak) {
     int mendiKopurua = 0;
-    PrintWriter outputStream = null;
-    try {
-      outputStream = new PrintWriter(new FileWriter("src\\data\\" + strFileOut));
-      if (mendiKopurua == 0) {
-        outputStream.println("MENDIA;ALTUERA;PROBINTZIA");
-      }
-      for (int i = 0; i < mendiak.getMendiak().size(); i++) {
-        outputStream.println(mendiak.getMendiak().get(i).toString());
+
+    try (PrintWriter outputStream = new PrintWriter(new FileWriter("src\\data\\" + strFileOut))) {
+      for (Mendia m : mendiak.getMendiak()) {
+        if (mendiKopurua == 0) {
+          outputStream.println("MENDIA;ALTUERA;PROBINTZIA");
+        }
         mendiKopurua++;
+        outputStream.println(m.getId()+ ";" + m.getIzena() + ";" + m.getAltuera() + ";" + m.getProbintzia());
       }
-    } catch (Exception e) {
-      e.printStackTrace();
+      System.out.println(strFileOut + " fitxategia ondo idatzi da.");
+    } catch (IOException e) {
+      System.out.println(strFileOut + " fitxategiarekin arazoren bat egon da.");
     }
     return mendiKopurua;
   }
