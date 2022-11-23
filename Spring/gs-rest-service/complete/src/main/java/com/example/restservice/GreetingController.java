@@ -13,7 +13,18 @@ public class GreetingController {
 	private final AtomicLong counter = new AtomicLong();
 
 	@GetMapping("/greeting")
-	public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return new Greeting(counter.incrementAndGet(), String.format(template, name));
+	public Greeting greeting(@RequestParam(value = "name", defaultValue = "IzenBarik") String name, 
+							@RequestParam(value = "lang", defaultValue = "eu") String lang) {
+
+		switch (lang) {
+			case "en":
+				return new Greeting(counter.incrementAndGet(), String.format(template, name));
+			case "eu":
+				return new Greeting(counter.incrementAndGet(), String.format("Kaixo, %s!", name));
+			case "es":
+				return new Greeting(counter.incrementAndGet(), String.format("Hola, %s!", name));
+			default:
+				return new Greeting(counter.incrementAndGet(), String.format(template, name));
+		}
 	}
 }
