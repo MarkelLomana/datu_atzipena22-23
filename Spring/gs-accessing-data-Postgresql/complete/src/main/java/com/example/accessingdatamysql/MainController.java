@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 
-@RestController	// This means that this class is a Controller
+@Controller	// This means that this class is a Controller
 @RequestMapping(path="/demo") // This means URL's start with /demo (after Application path)
 public class MainController {
 	@Autowired // This means to get the bean called userRepository
@@ -25,7 +25,7 @@ public class MainController {
 		// @ResponseBody means the returned String is the response, not a view name
 		// @RequestParam means it is a parameter from the GET or POST request
 
-		User n = new User();
+		Erabiltzailea n = new Erabiltzailea();
 		n.setName(name);
 		n.setEmail(email);
 		userRepository.save(n);
@@ -33,14 +33,13 @@ public class MainController {
 	}
 
 	@GetMapping(path="/all")
-	public @ResponseBody Iterable<User> getAllUsers() {
+	public @ResponseBody Iterable<Erabiltzailea> getAllUsers() {
 		// This returns a JSON or XML with the users
 		return userRepository.findAll();
 	}
 	
 	@PutMapping("/update/{userId}")
-	@Transactional 
-	public ResponseEntity updateUser(@Valid @RequestBody User user, @PathVariable int userId) {
+	public ResponseEntity updateUser(@Valid @RequestBody Erabiltzailea user, @PathVariable int userId) {
 		try {
 			user.setId(userId);
 			userRepository.save(user);
@@ -53,7 +52,6 @@ public class MainController {
 	}
 
 	@DeleteMapping("/delete/{userId}")
-	@Transactional 
 	public ResponseEntity deleteUserById(@PathVariable int userId) {
 		try {
 			userRepository.deleteById(userId);
