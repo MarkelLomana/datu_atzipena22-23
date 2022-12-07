@@ -44,8 +44,7 @@ public class MainController {
   }
 
   @DeleteMapping(value = "/delete/{id}")
-  // @ResponseBody
-  public ResponseEntity<?> deleteUserById(@PathVariable(required = true) int userId) {
+  public ResponseEntity deleteUserById(@PathVariable int userId) {
     try {
       userRepository.deleteById(userId);
       return ResponseEntity.ok().build();
@@ -54,4 +53,5 @@ public class MainController {
       return ResponseEntity.notFound().build();
     }
   }
+
 }

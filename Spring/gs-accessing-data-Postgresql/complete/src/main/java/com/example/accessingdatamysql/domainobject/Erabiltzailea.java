@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
-
 @Entity // This tells Hibernate to make a table out of this class
 public class Erabiltzailea {
   @Id
@@ -17,7 +16,7 @@ public class Erabiltzailea {
   @Column(name = "Email")
   private String email;
 
-  @OneToMany(mappedBy = "erabiltzailea", cascade = CascadeType.ALL, orphanRemoval = true)
+  @OneToMany( cascade = CascadeType.ALL, mappedBy = "erabiltzaile" )
   private List<Session> sessions = new ArrayList<>();
 
   public Integer getId() {

@@ -14,8 +14,8 @@ public class Session {
   @Column(name = "Iraupena")
   private String iraupena;
 
-  @ManyToOne
-  @JoinColumn(name = "erabiltzailea")
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "id")
   private Erabiltzailea erabiltzailea;
 
   public Integer getId() {
