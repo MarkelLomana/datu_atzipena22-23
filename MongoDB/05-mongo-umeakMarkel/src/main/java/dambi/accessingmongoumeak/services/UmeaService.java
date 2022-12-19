@@ -24,7 +24,7 @@ public class UmeaService {
     return umeaRepository.delete(izena);
   }
 
-  public List<Umea> getAllOpariakById(long id) {
+  public List<String> getAllOpariakById(String id) {
     return umeaRepository.findByOpariak(id);
   }
 }

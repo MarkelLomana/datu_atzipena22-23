@@ -55,15 +55,10 @@ public class UmeaRepository {
     return umeaCollection.deleteMany(eq("izena", izena)).getDeletedCount();
   }
 
-  public List<Umea> findByOpariak(long id) {
-    return null;
-  }
+  public List<String> findByOpariak(String id) {
+    List<String> umearenOpariak = new ArrayList<>();
+    umearenOpariak = umeaCollection.find(eq("_id",id)).first().getOpariak();
+    return umearenOpariak;
+}
 
-  /*
-   * List<Umea> findByOpariak(long id) {
-   * List<Umea> opariak = umeaCollection.find(eq(id, "_id"));
-   * 
-   * return opariak;
-   * }
-   */
 }
